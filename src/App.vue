@@ -1,15 +1,19 @@
 <script setup>
 import Users from "./components/User.vue";
+import Login from "./components/Login.vue";
+
 </script>
 <template>
 
 <div>
 <Users :users="users" />
+<Login />
 </div>
 </template>
 
 <script >
 import eventBus from "./Services/eventbus";
+import Login from "./components/Login.vue";
 export default {
   name : "App",
   components: {
