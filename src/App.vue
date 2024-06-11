@@ -1,10 +1,13 @@
 <script setup>
 import Users from "./components/User.vue";
+import GenericEntityComponent from "./components/GenericEntityComponent.vue";
 </script>
 <template>
 
 <div>
-<Users :users="users" />
+ <!-- <Users :users="users" /> -->
+ <GenericEntityComponent entityName="Product"> </GenericEntityComponent>
+
 </div>
 </template>
 
@@ -14,6 +17,7 @@ export default {
   name : "App",
   components: {
     Users,
+    GenericEntityComponent
   },
   data () {
     return {
