@@ -1,6 +1,8 @@
 <script setup>
 import Users from "./components/User.vue";
 import GenericEntityComponent from "./components/GenericEntityComponent.vue";
+import Login from "./components/Login.vue";
+
 </script>
 <template>
 
@@ -8,11 +10,14 @@ import GenericEntityComponent from "./components/GenericEntityComponent.vue";
  <!-- <Users :users="users" /> -->
  <GenericEntityComponent entityName="Product"> </GenericEntityComponent>
 
+<Users :users="users" />
+<Login />
 </div>
 </template>
 
 <script >
 import eventBus from "./Services/eventbus";
+import Login from "./components/Login.vue";
 export default {
   name : "App",
   components: {
